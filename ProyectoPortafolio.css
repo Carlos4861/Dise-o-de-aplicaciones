@@ -1,0 +1,243 @@
+/* Variables para colores y fuentes */
+:root {
+  --color-primary: #05686abb; /* Color principal */
+  --color-secondary: #aa0404d4; /* Color secundario */
+  --color-tertiary: #0c818368; /* Color terciario */
+  --font-primary: 'Baloo Tamma 2', sans-serif; /* Fuente principal */
+  --font-secondary: 'Indie Flower', cursive; /* Fuente secundaria */
+}
+
+/* Configuración general para el margen, el padding y el box model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Uso del modelo de caja estándar */
+}
+
+/* Estilo general del cuerpo del documento */
+body {
+  font-family: var(--font-primary); /* Fuente principal */
+  line-height: 1.6; /* Espaciado entre líneas */
+  color: #333; /* Color de texto general */
+}
+
+/* Barra de navegación */
+.navbar {
+  background: var(--color-primary); /* Fondo de la barra de navegación */
+  padding: 1rem; /* Espaciado interno */
+}
+
+.navbar ul {
+  display: flex; /* Muestra los elementos en fila */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  list-style: none; /* Quita los puntos de lista */
+}
+
+.navbar ul li {
+  margin: 0 1rem; /* Espaciado entre elementos */
+}
+
+.navbar ul li a {
+  color: #0c0000; /* Color del texto */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: 700; /* Texto en negrita */
+}
+
+/* Sección principal tipo héro */
+.hero {
+  background: var(--color-tertiary); /* Fondo de la sección */
+  color: #000000; /* Color del texto */
+  text-align: center; /* Alineación centrada */
+  padding: 5rem 1rem; /* Espaciado interno */
+}
+
+.hero h1 {
+  font-size: 2.5rem; /* Tamaño del texto principal */
+}
+
+.hero .btn {
+  margin-top: 1rem; /* Margen superior */
+  background: var(--color-secondary); /* Fondo del botón */
+  color: #ffffff; /* Color del texto del botón */
+  padding: 0.5rem 1rem; /* Espaciado interno */
+  text-decoration: none; /* Sin subrayado */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Manita al pasar por encima */
+}
+
+/* Secciones generales */
+section {
+  padding: 3rem 1rem; /* Espaciado interno */
+}
+
+h2 {
+  text-align: center; /* Centrado del texto */
+  margin-bottom: 2rem; /* Margen inferior */
+}
+
+/* Galería de proyectos */
+.work .gallery {
+  display: grid; /* Diseño en cuadrícula */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Columnas adaptables */
+  gap: 1rem; /* Espaciado entre elementos */
+}
+
+.work img {
+  width: 100%; /* Anchura completa del contenedor */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Sección "Sobre mí" */
+.about-content {
+  display: flex; /* Diseño flexible */
+  gap: 2rem; /* Espaciado entre elementos */
+  align-items: center; /* Alineación vertical */
+  justify-content: center; /* Centrado horizontal */
+  flex-wrap: wrap; /* Acomodo en varias filas si es necesario */
+}
+
+.about-content img {
+  border-radius: 50%; /* Imagen en forma de círculo */
+  width: 150px; /* Ancho fijo */
+  height: 200px; /* Alto fijo */
+  object-fit: contain; /* Asegura que la imagen cubra completamente */
+}
+
+/* Sección de tarjetas de servicios */
+.cards {
+  display: flex; /* Diseño flexible */
+  gap: 2rem; /* Espaciado entre tarjetas */
+  justify-content: center; /* Centrado horizontal */
+  flex-wrap: wrap; /* Acomodo en varias filas si es necesario */
+}
+
+.card {
+  text-align: center; /* Centra el texto */
+  padding: 1rem; /* Espaciado interno */
+  border: 1px solid #ff03af95; /* Borde con transparencia */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.card i {
+  font-size: 2rem; /* Tamaño grande para iconos */
+  color: var(--color-primary); /* Color del icono */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Eleva la tarjeta al pasar el mouse */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+/* Barra de habilidades */
+.skill-bar {
+  margin: 1rem 0; /* Margen superior e inferior */
+}
+
+.skill-bar label {
+  font-weight: bold; /* Texto en negrita */
+}
+
+.skill-bar .bar {
+  background: var(--color-secondary); /* Color de la barra */
+  height: 10px; /* Altura fija */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo para la sección de testimonios */
+.testimonials {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Contenedor de tarjetas */
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Estilo individual para cada tarjeta */
+.testimonial-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Imagen de testimonio */
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* Título y texto */
+.testimonial-card h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.testimonial-card p {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.4;
+}
+
+
+/* Formulario de contacto */
+.contact form {
+  display: flex; /* Diseño flexible */
+  flex-direction: column; /* Columnas verticales */
+  gap: 1rem; /* Espaciado entre elementos */
+  max-width: 500px; /* Ancho máximo */
+  margin: 0 auto; /* Centrado horizontal */
+}
+
+.contact input,
+.contact textarea {
+  width: 100%; /* Ancho completo */
+  padding: 0.5rem; /* Espaciado interno */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.contact .btn {
+  background: var(--color-primary); /* Fondo del botón */
+  color: #fff; /* Color del texto */
+  padding: 0.5rem 1rem; /* Espaciado interno */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Manita al pasar por encima */
+}
+
+/* Pie de página */
+footer {
+  text-align: center; /* Texto centrado */
+  padding: 1rem; /* Espaciado interno */
+  background: var(--color-primary); /* Fondo del pie de página */
+  color: #fff; /* Color del texto */
+}
+
+footer .socials a {
+  color: #fff; /* Color de los iconos */
+  margin: 0 0.5rem; /* Espaciado entre iconos */
+}
+
